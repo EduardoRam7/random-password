@@ -1,15 +1,26 @@
 // Assignment code here
 var lowerCaseChars = "qwertyuiopasdfghjklzxcvbnm";
-var uppercaseChars = "QWERTYUIOPASDFGHJKLZXCVBNM";
+var upperCaseChars = "QWERTYUIOPASDFGHJKLZXCVBNM";
 var numbersChars = "1234567890";
 var specialChars = "!#$%&()*+,-./:;<=>?@[]^_{|}~";
-
-prompt("Would you like your password to have lowercase characters?");
-prompts("Would you like your password to have uppercase characters?");
-prompt("Would you like your password to contain numbers?");
-prompt("Would you like your password to contain special characters?");
-
-
+function generatePassword (){
+var ask1 = prompt("Would you like your password to have lowercase characters?");
+if (ask1 === "yes" || "YES" || "Yes"){
+  writePassword + lowerCaseChars;
+  }
+var ask2 = prompt("Would you like your password to have uppercase characters?");
+if (ask2 === "yes" || "YES" || "Yes"){
+  writePassword + upperCaseChars;
+  }
+var ask3 = prompt("Would you like your password to contain numbers?");
+if (ask3 === "yes" || "YES" || "Yes"){
+  writePassword + numbersChars;
+  }
+var ask4 = prompt("Would you like your password to contain special characters?");
+if (ask4 === "yes" || "YES" || "Yes"){
+  writePassword + specialChars;
+  }
+}
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
